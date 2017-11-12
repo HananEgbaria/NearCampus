@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NearCampus</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_places_list_tabbed">PlacesListTabbed</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="app_id">1688687074741098</string>
+    <string name="about_app">NearCampus offers easy and fast access to information about places near campus or university, like phone numbers , open hours ,
+        address , map and more.\n\nNearCampus is a free App made with love especially for students.
+    </string>
+
+</resources>

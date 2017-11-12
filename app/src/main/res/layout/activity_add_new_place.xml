@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.group7.nearcampus.AddNewPlace"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name (*)"
+        android:id="@+id/ResturantName1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:textColor="#931d05" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/ResturantName1ed"
+        android:textColor="#000000"
+        android:singleLine="true"
+        android:textIsSelectable="false"
+        android:contentDescription="@string/abc_capital_on"
+        android:layout_above="@+id/phone1"
+        android:layout_alignLeft="@+id/phoneEd"
+        android:layout_alignStart="@+id/phoneEd" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Phone (*)"
+        android:id="@+id/phone1"
+        android:layout_below="@+id/ResturantName1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp"
+        android:textColor="#931d05" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Address"
+        android:id="@+id/Address1"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/phone1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#931d05" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Description"
+        android:id="@+id/description1"
+        android:layout_below="@+id/Address1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp"
+        android:textColor="#931d05" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/phoneEd"
+        android:textColor="#000000"
+        android:autoText="false"
+        android:phoneNumber="true"
+        android:layout_above="@+id/Address1"
+        android:layout_toRightOf="@+id/description1"
+        android:layout_toEndOf="@+id/description1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AddressEd"
+        android:layout_above="@+id/description1"
+        android:layout_alignLeft="@+id/phoneEd"
+        android:layout_alignStart="@+id/phoneEd"
+        android:textColor="#000000"
+        android:singleLine="true"
+        android:layout_alignRight="@+id/phoneEd"
+        android:layout_alignEnd="@+id/phoneEd" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:id="@+id/saveb1"
+        android:background="#931d05"
+        android:textColor="#ffffff"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/DescriptionEd"
+        android:layout_alignBottom="@+id/description1"
+        android:layout_alignLeft="@+id/AddressEd"
+        android:layout_alignStart="@+id/AddressEd"
+        android:textColor="#000000" />
+
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffffff">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Phone"
+        android:id="@+id/PhoneView"
+        android:textColor="#931d05"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal"
+        android:layout_alignRight="@+id/Saveb2"
+        android:layout_alignEnd="@+id/Saveb2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Address"
+        android:id="@+id/AddressView"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_below="@+id/PhoneView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Description"
+        android:id="@+id/DescriptionView"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:layout_alignRight="@+id/CallB"
+        android:layout_alignEnd="@+id/CallB"
+        android:layout_below="@+id/AddressView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingTop="3dp"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="#d0dbe1"
+        android:layout_below="@+id/DescriptionView"
+        android:layout_alignRight="@+id/DescriptionView"
+        android:layout_alignEnd="@+id/DescriptionView"
+        android:id="@+id/view" />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How many stars whould you give this place ?"
+        android:id="@+id/RatingDescription"
+        android:textColor="#931d05"
+        android:layout_below="@+id/openhourstxt"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        />
+
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_below="@+id/RatingDescription"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="Rate it !"
+        android:id="@+id/Saveb2"
+        android:textColor="#931d05"
+        android:background="@drawable/button_shape"
+        android:textSize="13dp"
+        android:layout_below="@+id/ratingBar"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/CallB"
+        android:background="@drawable/c"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/openhourstxt"
+        android:layout_below="@+id/view"
+        android:layout_alignRight="@+id/CallB"
+        android:layout_alignEnd="@+id/CallB"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="@dimen/activity_vertical_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/numOfReviews"
+        android:layout_alignBottom="@+id/ratingBar"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

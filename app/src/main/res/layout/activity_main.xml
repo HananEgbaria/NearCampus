@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="16dp"
+    tools:context="com.group7.nearcampus.testing"
+    android:layout_gravity="center"
+    android:padding="50dp"
+    android:background="#ffffff">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        >
+
+        <ImageButton
+            android:background="@drawable/coffee"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/Coffee"
+            android:layout_marginLeft="10dp"
+            android:onClick="OpenCategory"
+            />
+
+        <ImageButton
+            android:background="@drawable/food1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/Food"
+            android:layout_marginLeft="10dp"
+            android:onClick="OpenCategory"
+            android:layout_column="1" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <ImageButton
+            android:background="@drawable/intertainment"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/Entertaiment"
+            android:layout_marginLeft="10dp"
+            android:onClick="OpenCategory"/>
+
+
+        <ImageButton
+            android:background="@drawable/haircut"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/HairCut"
+            android:layout_marginLeft="10dp"
+            android:onClick="OpenCategory"
+            android:layout_column="1" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="16dp">
+
+        <ImageButton
+            android:background="@drawable/pharmacy"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/Pharmacy"
+            android:layout_marginLeft="10dp"
+            android:onClick="OpenCategory"/>
+
+        <ImageButton
+            android:background="@drawable/supermarket"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/SuperMarket"
+            android:layout_marginLeft="10dp"
+            android:onClick="OpenCategory"
+            android:layout_column="1"
+            />
+    </TableRow>
+
+
+        <ImageButton
+            android:paddingTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copuns area"
+            android:id="@+id/copuns_area"
+            android:background="@drawable/getcoupons"
+            android:layout_column="0" />
+
+
+</TableLayout>

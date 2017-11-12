@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.menus.MainActivity">
+
+    <item
+        android:id="@+id/menu_favorites"
+        android:orderInCategory="1"
+        android:title="MyFavorites"
+        app:showAsAction="always"
+        android:icon="@drawable/favorites2">
+    </item>
+
+    <item
+        android:id="@+id/menu_share"
+        android:orderInCategory="1"
+        android:title="menu_share"
+        app:showAsAction="always"
+        android:icon="@drawable/share22">
+    </item>
+
+
+    <item
+        android:id="@+id/page2"
+        android:orderInCategory="1"
+        android:title="About App">
+    </item>
+
+    <item
+        android:id="@+id/page3"
+        android:orderInCategory="2"
+        android:title="Share NearCampus">
+    </item>
+    <item
+        android:id="@+id/page4"
+        android:orderInCategory="3"
+        android:title="Rate App on GooglePlay">
+    </item>
+
+
+
+</menu>
